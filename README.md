@@ -6,22 +6,22 @@ Run script after your ubuntu installation, this script install over apt and ppa 
 
 ## Getting Started
 
-'''
+```
 sudo apt install git
 git clone https://github.com/picardflo/ubuntu_install_scripts.git /tmp
-'''
+```
 
 
 
 ### Prerequisites
 
-* Git tools only
+* Git
 
 ### Installing / Run
 
-'''
+```
 . /tmp/install.sh
-'''
+```
 
 
 ## License
