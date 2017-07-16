@@ -57,6 +57,12 @@ if [ $(id -u) -eq 0 ];
 
     ## From ppa or externa Repositories
 
+		# Chrome (stable)
+		wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+		sh -c ‘echo « deb https://dl.google.com/linux/chrome/deb/ stable main » > /etc/apt/sources.list.d/google-chrome.list’
+		apt update
+                apt install google-chrome-stable -y
+
 		# Atom
 		add-apt-repository ppa:webupd8team/atom --yes
 		apt update
@@ -82,10 +88,10 @@ if [ $(id -u) -eq 0 ];
 		apt update
 		apt install handbrake -y
 		# simple library designed for accessing DVDs like a block device without having to bother about the decryption (DRM bypass)
-		apt install libdvdcss2 -y
+		#apt install libdvdcss2 -y
 
 		# virtualbox
-		sh -c 'echo "deb deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -c -s) contrib" > /etc/apt/sources.list.d/oracle-virtualbox5.list'
+		sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -c -s) contrib" > /etc/apt/sources.list.d/oracle-virtualbox5.list'
 		wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 		wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 		apt update
