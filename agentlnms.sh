@@ -11,7 +11,7 @@ if [ $(id -u) -eq 0 ]; then
    		echo ""
    
    		# Install git
-   		apt update && apt install git
+   		apt update && apt install git -y
    
    		# Get agent
    		git clone https://github.com/librenms/librenms-agent.git /opt/librenms-agent
@@ -39,7 +39,7 @@ if [ $(id -u) -eq 0 ]; then
    		echo "detected plateform : $platform"
    		echo ""
    		# Install git
-   		apt update && apt install git
+   		apt update && apt install git -y
    
    		# Get agent
    		git clone https://github.com/librenms/librenms-agent.git /opt/librenms-agent
