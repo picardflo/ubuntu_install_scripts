@@ -98,6 +98,11 @@ if [ $(id -u) -eq 0 ];
 		apt install virtualbox-5.1 -y
 
 
+		#Caffeine
+		add-apt-repository ppa:caffeine-developers/ppa --yes
+		apt-get update
+		apt install caffeine -y
+
 		echo "+------------------------------------------------------------+"
 		echo "| Update OS and clean OS                                     |"
 		echo "+------------------------------------------------------------+"
