@@ -16,9 +16,11 @@ if [ $(id -u) -eq 0 ];
 		sleep 5
 
 		## From official Ubuntu Repositories
+		apt install ubuntu-restricted-extras --yes
 		apt install filezilla --yes
 		apt install mc --yes
 		apt install vlc --yes
+		apt install vlc-plugin-fluidsynth --yes
 		apt install cifs-utils --yes
 		apt install nfs-utils --yes
 		apt install ssh --yes
@@ -120,7 +122,7 @@ if [ $(id -u) -eq 0 ];
 		apt-get update
 		apt-get install qownnotes --yes
 
-		#
+		# NextCloud Client
 		add-apt-repository ppa:nextcloud-devs/client
 		apt-get update
 		apt-get install nextcloud-client --yes
