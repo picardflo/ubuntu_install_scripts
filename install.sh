@@ -112,7 +112,7 @@ if [ $(id -u) -eq 0 ];
 		apt-get update
 		apt-get install nextcloud-client --yes
 
-		# NextCloud ClipGrab
+		# ClipGrab
 		add-apt-repository ppa:clipgrab-team/ppa --yes
 		apt-get update
 		apt-get install clipgrab --yes
