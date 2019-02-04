@@ -108,9 +108,14 @@ if [ $(id -u) -eq 0 ];
 		apt-get install qownnotes --yes
 
 		# NextCloud Client
-		add-apt-repository ppa:nextcloud-devs/client
+		add-apt-repository ppa:nextcloud-devs/client --yes
 		apt-get update
 		apt-get install nextcloud-client --yes
+
+		# NextCloud ClipGrab
+		add-apt-repository ppa:clipgrab-team/ppa --yes
+		apt-get update
+		apt-get install clipgrab --yes
 
 		echo "+------------------------------------------------------------+"
 		echo "| Update OS and clean OS                                     |"
