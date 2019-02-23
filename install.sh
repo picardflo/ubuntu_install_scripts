@@ -117,6 +117,12 @@ if [ $(id -u) -eq 0 ];
 		apt-get update
 		apt-get install clipgrab --yes
 
+		# Etcher 
+		echo "deb https://deb.etcher.io stable etcher" | tee /etc/apt/sources.list.d/balena-etcher.list
+		apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
+		apt-get update
+		apt-get install balena-etcher-electron --yes
+
 		echo "+------------------------------------------------------------+"
 		echo "| Update OS and clean OS                                     |"
 		echo "+------------------------------------------------------------+"
