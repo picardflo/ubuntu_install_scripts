@@ -56,7 +56,7 @@ if [ $(id -u) -eq 0 ];
 		apt install acpi --yes
 		apt install xpad --yes
 		apt install bleachbit --yes
-		apt install screenfetch --yes
+		apt install neofetch --yes
 		apt install chromium-browser --yes
 		
 
