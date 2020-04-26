@@ -24,7 +24,6 @@ if [ $(id -u) -eq 0 ];
 		apt install cifs-utils --yes
 		apt install nfs-utils --yes
 		apt install ssh --yes
-		apt install conky --yes
 		apt install gpodder --yes
 		apt install remmina --yes
 		apt install remmina-plugin-* --yes
@@ -50,16 +49,14 @@ if [ $(id -u) -eq 0 ];
 		apt install apt-transport-https --yes
 		apt install hplip --yes
 		apt install hardinfo --yes
-		apt install redshift-gtk --yes
 		apt install easytag --yes
 		apt install brasero --yes
 		apt install acpi --yes
 		apt install xpad --yes
 		apt install bleachbit --yes
 		apt install neofetch --yes
-		apt install chromium-browser --yes
-		
-
+		apt install screenfetch --yes
+		apt install flameshot --yes
 
 
 		# Check version and install tools by desktop env.
@@ -88,11 +85,6 @@ if [ $(id -u) -eq 0 ];
 		# grub-customizer
 		add-apt-repository --yes ppa:danielrichter2007/grub-customizer
 		apt update &&  apt install --yes grub-customizer
-
-		# install conky Manager
-		add-apt-repository ppa:teejee2008/ppa --yes
-		apt update
-		apt install conky-manager --yes
 
 
 		# install HandBrake
